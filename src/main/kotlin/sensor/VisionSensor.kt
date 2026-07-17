@@ -8,7 +8,7 @@ import javafx.scene.paint.Color
 
 /**
  * A forward-looking color "camera": casts a ray from the sensor and reports the color of the
- * nearest thing it hits within [range] — the ball, an obstacle, an outer wall, or the floor if
+ * nearest thing it hits within [range] - the ball, an obstacle, an outer wall, or the floor if
  * nothing is close. This lets a program spot the ball at a distance (telemetry shows RED when the
  * ball is ahead) and also tell when it is looking straight at a wall.
  */

@@ -47,3 +47,4 @@ abstract class Sensor<T>(
 
     protected abstract fun measure(env: Environment, sensorPose: Pose): T
 }
+ 

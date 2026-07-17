@@ -15,8 +15,8 @@ class LineMazeEnvironment : AbstractEnvironment() {
     override val obstacles = emptyList<Obstacle>()
 
     override val lineWidth = 16.0
-    override val floorColor: Color = Color.web("#1c2b33")
-    override val lineColor: Color = Color.web("#ffd23f")
+    override val floorColor: Color = Color.web(Colors.FLOOR_ALT)
+    override val lineColor: Color = Color.web(Colors.LINE_ALT)
 
     private val waypoints = listOf(
         Vector2(90.0, 90.0),

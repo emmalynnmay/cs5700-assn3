@@ -42,8 +42,8 @@ abstract class AbstractEnvironment : Environment {
     override val ball: Ball? get() = null
     override val temperatureField: TemperatureField? get() = null
     override val lineWidth: Double get() = 12.0
-    override val floorColor: Color get() = Color.web("#23262b")
-    override val lineColor: Color get() = Color.web("#f4f4f4")
+    override val floorColor: Color get() = Color.web(Colors.FLOOR)
+    override val lineColor: Color get() = Color.web(Colors.LINE)
 
     override fun temperatureAt(p: Vector2): Double = temperatureField?.valueAt(p) ?: 20.0
 

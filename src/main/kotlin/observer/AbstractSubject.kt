@@ -1,7 +1,7 @@
 package observer
 
 /**
- * Reusable base implementation of [Subject] — this is the heart of the Observer pattern, and it is
+ * Reusable base implementation of [Subject] - this is the heart of the Observer pattern, and it is
  * yours to implement. Every sensor extends this class, so once it works, every sensor can be
  * subscribed to.
  *
@@ -10,20 +10,25 @@ package observer
  *   - unsubscribe:     forget [observer]
  *   - notifyObservers: call onUpdate(value) on every currently-subscribed observer
  *
- * Until you implement these, sensors still compute their readings but nothing is ever delivered —
+ * Until you implement these, sensors still compute their readings but nothing is ever delivered -
  * the telemetry panel stays blank and programs receive no callbacks.
  */
 abstract class AbstractSubject<T> : Subject<T> {
 
+    private val observers: MutableSet<Observer<T>> = LinkedHashSet()
+
     override fun subscribe(observer: Observer<T>) {
-        // TODO(student): remember this observer
+        observers.add(observer)
     }
 
     override fun unsubscribe(observer: Observer<T>) {
-        // TODO(student): forget this observer
+        observers.remove(observer)
     }
 
     override fun notifyObservers(value: T) {
-        // TODO(student): deliver `value` to every subscribed observer via onUpdate(value)
+        for (observer in observers) 
+        {
+            observer.onUpdate(value)
+        }
     }
 }

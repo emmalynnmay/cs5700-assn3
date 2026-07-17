@@ -9,3 +9,4 @@ interface Subject<T> {
     fun unsubscribe(observer: Observer<T>)
     fun notifyObservers(value: T)
 }
+ 

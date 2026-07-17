@@ -9,7 +9,7 @@ import kotlin.math.roundToInt
 /**
  * Distance (world units) from the sensor to the nearest thing along its facing, up to [maxRange].
  * "Things" are the rectangular obstacles *and* the environment's outer walls (the edges of
- * `env.bounds`) — a ray cast from inside the bounds exits through the nearest wall.
+ * `env.bounds`) - a ray cast from inside the bounds exits through the nearest wall.
  */
 class SonarSensor(
     mountForward: Double,

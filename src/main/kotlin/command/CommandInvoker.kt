@@ -1,7 +1,7 @@
 package command
 
 /**
- * The Invoker. It runs commands and keeps an undo/redo history — this is yours to implement.
+ * The Invoker. It runs commands and keeps an undo/redo history - this is yours to implement.
  *
  * TODO(student): implement run / undo / redo using the two stacks below:
  *   - run:  execute the command, push it onto the undo stack, and clear the redo stack
