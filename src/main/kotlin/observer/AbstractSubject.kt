@@ -5,7 +5,7 @@ package observer
  * yours to implement. Every sensor extends this class, so once it works, every sensor can be
  * subscribed to.
  *
- * TODO(student): give this class a collection of observers and implement the three methods:
+ * Give this class a collection of observers and implement the three methods:
  *   - subscribe:       remember [observer] (avoid adding the same one twice)
  *   - unsubscribe:     forget [observer]
  *   - notifyObservers: call onUpdate(value) on every currently-subscribed observer
