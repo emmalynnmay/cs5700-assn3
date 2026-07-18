@@ -20,7 +20,7 @@ class ObstacleCourseEnvironment : AbstractEnvironment() {
         Obstacle(Rectangle(680.0, 360.0, 55.0, 180.0)),
     )
 
-    override val ball = Ball(Vector2(810.0, 120.0), 18.0, Color.web("#e5342b"))
+    override val ball = Ball(Vector2(810.0, 120.0), 18.0, Color.web(Colors.BALL))
 
     override fun startPose() = Pose(60.0, 540.0, Math.toRadians(-30.0))
 

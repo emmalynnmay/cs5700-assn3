@@ -28,6 +28,18 @@ class VisionSensorObserver(private val label: Label) : Observer<Color> {
         {
             label.text = "line"
         }
+        else if (hex == Colors.BALL)
+        {
+            label.text = "ball"
+        }
+        else if (hex == Colors.OBSTACLE)
+        {
+            label.text = "obstacle"
+        }
+        else if (hex == Colors.WALL)
+        {
+            label.text = "wall"
+        }
         else
         {
             label.text = hex
