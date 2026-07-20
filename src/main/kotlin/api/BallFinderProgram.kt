@@ -69,7 +69,6 @@ class BallFinderProgram : RobotProgram {
             }
             else -> {
                 val curve = if (Random.nextBoolean()) CURVE_LEFT else CURVE_RIGHT
-                // robot.perform(SetVelocityCommand(robot.actuator, curve.first, curve.second))
                 robot.perform(SetVelocityCommand(robot.actuator, FORWARD_SPEED, FORWARD_SPEED))
             }
         }

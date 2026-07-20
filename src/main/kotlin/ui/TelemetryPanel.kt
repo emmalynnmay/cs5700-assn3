@@ -58,7 +58,7 @@ class TelemetryPanel : VBox(6.0) {
 
         val tempObserver = TempSensorObserver(temperature)
         robot.temperature.subscribe(tempObserver)
-
+ 
         val visionObserver = VisionSensorObserver(vision)
         robot.vision.subscribe(visionObserver)
 

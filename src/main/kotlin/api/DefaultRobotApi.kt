@@ -8,7 +8,7 @@ import sensor.RobotSensors
 /**
  * Provided implementation of [RobotApi]: a thin facade over the [CommandInvoker].
  *
- * [actuatorProvider] and [sensorsProvider] are looked up on every access so the API always targets
+ * [actuatorProvider] and [ sensorsProvider] are looked up on every access so the API always targets
  * the *current* robot (a fresh robot is created when the environment is reloaded or reset).
  */
 class DefaultRobotApi(
